@@ -61,6 +61,6 @@ class CaptchaConfig(Config):
         )
         self.recaptcha_siteverify_api = config.get(
             "recaptcha_siteverify_api",
-            "https://www.recaptcha.net/recaptcha/api/siteverify",
+            "https://api.hcaptcha.com/siteverify",
         )
         self.recaptcha_template = self.read_template("recaptcha.html")
