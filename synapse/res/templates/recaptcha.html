@@ -2,7 +2,7 @@
 {% block title %}Authentication{% endblock %}
 
 {% block header %}
-<script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 <style type="text/css">
   .g-recaptcha div {
     margin: auto;
@@ -29,7 +29,7 @@ function captchaDone() {
         Please verify that you're not a robot.
         </p>
         <input type="hidden" name="session" value="{{ session }}" />
-        <div class="g-recaptcha"
+        <div class="h-recaptcha"
             data-sitekey="{{ sitekey }}"
             data-callback="captchaDone">
         </div>
